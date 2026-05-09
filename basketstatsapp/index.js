@@ -59,7 +59,6 @@ app.post('/user', async  (req, res) =>{
     }
 })
 
-
 app.listen(port, () => {
     console.log(`Express app is listening on ${port}`);
 })
