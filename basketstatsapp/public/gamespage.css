@@ -1,0 +1,54 @@
+#body {
+    background-color: white;
+    font-family: tahoma;
+}
+
+#heading {
+    font-family: tahoma;
+}
+
+h2 {
+    font-family: Tahoma;
+}
+
+.gameBox {
+    display: inline-table;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 2%;
+    border: 2px solid black;
+    font-family: tahoma;
+    font-size: medium;
+    font-weight: bold;
+    padding-left: 10px;
+    height: 130px;
+    width: 200px;
+} 
+
+.gameBox h3 {
+    margin-top: 5;
+    margin-bottom: 5;
+}
+.gameBox p {
+    margin-top: 2;
+    margin-bottom: 2;
+}
+
+#gameDataTable th, td {
+    font-family: tahoma;
+    border: 1px solid black;
+    padding: 10px;  
+    margin: auto;
+}
+
+#gameDataTable {
+    border: 1px solid black;
+    margin:auto
+}
+
+
+
+
+
+
+

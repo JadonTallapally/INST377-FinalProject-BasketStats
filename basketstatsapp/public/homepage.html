@@ -1,9 +1,50 @@
 <html>
     <head>
         <title>Homepage</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="homepage.css">
+        <link rel="stylesheet" href="navbar.css">
+        <script src="homepage.js" defer></script>
+
     </head>
 
     <body>
-        <h1>Hi</h1>
+        <nav class="navBar">
+        <img id=nbaLogo src="NBA_logo.png">
+        <h1 id="heading1">BasketStats</h1>
+        <ul>
+            <li><a href="homepage.html" class="Button">Home</a></li>
+            <li><a href="gamespage.html" class="Button">Game Data</a></li>
+            <li><a href="statspage.html" class="Button">Stats</a></li>
+            <li><a href="aboutpage.html" class="Button">About</a></li>
+        </ul>
+        </nav>
+
+        <div id="headings">
+            <h1 id="heading2">Welcome to BasketStats!</h1>
+            <h1 id=heading3>Recent Games</h1>
+        </div>
+        
+        <div id=mainBox>
+        <div class="swiper">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <img class="swiper-slide" src="https://cdn.nba.com/manage/2026/03/playoffs-2025.jpg"></img>
+            <img class="swiper-slide" src="https://www.nbatopshot.com/cdn-cgi/image/width=1260,quality=80,format=webp/https://config.nbatopshot.com/ftue/playoffs-2026/NBA_Playoffs_players-v2.png"></img>
+            <img class="swiper-slide" src="https://sportshub.cbsistatic.com/i/2026/05/12/bc8548e3-6ced-4e52-bc97-c7ecac8d4086/nba-playoff-bracket-okc3.png"></img>
+            <img class="swiper-slide" src="https://blog.ticketmaster.com/wp-content/uploads/nba-kids-games.png"></img>
+            <img class="swiper-slide" src="https://images.mktw.net/im-97542824?width=1260&height=840"></img>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        </div>
+        </div>
+    
+        <div id="sideBox">
+        <div id="gamesPlayed"></div>
+        </div>
     </body>
 </html>

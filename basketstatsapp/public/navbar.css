@@ -1,0 +1,41 @@
+.navBar {
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center; 
+}
+
+#nbaLogo {
+    padding-left: 20px;
+    height: 80px;
+}
+
+.navBar ul {
+    display: inline-flex;
+    margin-right: auto;
+    gap: 40px;
+    font-family: 'Tahoma';
+    font-weight: bold;
+}
+
+.navBar li {
+    list-style: none;
+}
+
+.Button {
+    color: White;
+    text-decoration: none;
+}
+
+.navBar li:hover {
+    background-color: white;
+}
+
+.navBar li:hover .Button {
+    color: black;
+}
+
+#heading1 {
+    padding-left: 2px;
+    font-family: 'Tahoma';
+}

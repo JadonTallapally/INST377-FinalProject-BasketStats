@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <title>Stats Page</title>
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="statspage.css">
+        <script src="statspage.js" defer></script>
+    </head>
+
+    <body>
+        <nav class="navBar">
+        <img id=nbaLogo src="NBA_logo.png">
+        <h1 id="heading1">BasketStats</h1>
+        <ul>
+            <li><a href="homepage.html" class="Button">Home</a></li>
+            <li><a href="gamespage.html" class="Button">Game Data</a></li>
+            <li><a href="statspage.html" class="Button">Stats</a></li>
+            <li><a href="aboutpage.html" class="Button">About</a></li>
+        </ul>
+        </nav>
+
+        <div id="mainBox">
+            <h1 id="heading">Stats Page</h1>
+            <h2 id="heading">Welcome to the stats page! On this page you can view individual player stats or compare stats of two different players!</h2>
+        </div>   
+        
+        <div id="contentBox">
+        <div id="box1">
+        <h3 id="heading1">Player 1</h3>
+        
+        <form id="teams" onsubmit="getPlayerStats(); return false">
+        <label for="player1">Player Name:</label>
+        <input type="text" id="player1" required>
+        <br>
+        <br>
+
+        <label for="year1">Year:</label>
+        <input type="text" id="year1" required>
+        <br>
+        <br>
+
+        <label for="playoffs1">Playoff Data?</label>
+        <select name="playoffs1" id="playoffs1">
+            <option value = "Yes">Yes - playoff Data only</option>
+            <option value = "No">No - Regular season data only</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="userTeam1">Team: </label>
+        <select name="userTeam1" id="userTeam1">
+            <option value = "ATL">Atlanta Hawks</option>
+            <option value = "BOS">Boston Celtics</option>
+            <option value = "CHA">Charlotte Hornets</option>
+            <option value = "CHI">Chicago Bulls</option>
+            <option value = "CLE">Cleveland Cavaliers</option>
+            <option value = "DAL">Dallas Mavericks</option>
+            <option value = "DEN">Denver Nuggets</option>
+            <option value = "DET">Detroit Pistons</option>
+            <option value = "GSW">Golden State Warriors</option>
+            <option value = "HOU">Houston Rockets</option>
+            <option value = "IND">Indiana Pacers</option>
+            <option value = "LAC">Los Angeles Clippers</option>
+            <option value = "LAL">Los Angeles Lakers</option>
+            <option value = "MEM">Memphis Grizzlies</option>
+            <option value = "MIA">Miami Heat</option>
+            <option value = "MIL">Milwaukee Bucks</option>
+            <option value = "MIN">Minnesota Timberwolves</option>
+            <option value = "NOP">New Orleans Pelicans</option>
+            <option value = "NYK">New York Knicks</option>
+            <option value = "BKN"> Brooklyn Nets</option>
+            <option value = "OKC">Oklahoma City Thunder</option>
+            <option value = "ORL">Orlando Magic</option>
+            <option value = "PHI">Philadelphia 76ers</option>
+            <option value = "PHX">Phoenix Suns</option>
+            <option value = "POR">Portland Trail Blazers</option>
+            <option value = "SAC">Sacramento Kings</option>
+            <option value = "SAS">San Antonio Spurs</option>
+            <option value = "TOR">Toronto Raptors</option>
+            <option value = "UTH">Utah Jazz</option>
+            <option value = "WAS">Washington Wizards</option>
+        </select>
+        <br>
+        <br>
+
+        <input type="submit" id="searchButton" value="View Stats" />
+        </form>
+        </div>
+        <br>
+
+
+        <!-- <-- person two --> 
+
+        <div id="box2">
+        <h3 id="heading2">Player 2</h3>
+
+        <form id="teams" onsubmit="getPlayerStats(); return false">
+        <label for="player2">Player Name: </label>
+        <input type="text" id="player2" required>
+        <br>
+        <br>
+
+        <label for="year2">Year:</label>
+        <input type="text" id="year2" required>
+        <br>
+        <br>
+
+        <label for="playoffs2">Playoff Data?</label>
+        <select name="playoffs2" id="playoffs2">
+            <option value = "Yes">Yes - playoff Data only</option>
+            <option value = "No">No - Regular season data only</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="userTeam2">Team: </label>
+        <select name="userTeam2" id="userTeam2">
+            <option value = "ATL">Atlanta Hawks</option>
+            <option value = "BOS">Boston Celtics</option>
+            <option value = "CHA">Charlotte Hornets</option>
+            <option value = "CHI">Chicago Bulls</option>
+            <option value = "CLE">Cleveland Cavaliers</option>
+            <option value = "DAL">Dallas Mavericks</option>
+            <option value = "DEN">Denver Nuggets</option>
+            <option value = "DET">Detroit Pistons</option>
+            <option value = "GSW">Golden State Warriors</option>
+            <option value = "HOU">Houston Rockets</option>
+            <option value = "IND">Indiana Pacers</option>
+            <option value = "LAC">Los Angeles Clippers</option>
+            <option value = "LAL">Los Angeles Lakers</option>
+            <option value = "MEM">Memphis Grizzlies</option>
+            <option value = "MIA">Miami Heat</option>
+            <option value = "MIL">Milwaukee Bucks</option>
+            <option value = "MIN">Minnesota Timberwolves</option>
+            <option value = "NOP">New Orleans Pelicans</option>
+            <option value = "NYK">New York Knicks</option>
+            <option value = "BKN"> Brooklyn Nets</option>
+            <option value = "OKC">Oklahoma City Thunder</option>
+            <option value = "ORL">Orlando Magic</option>
+            <option value = "PHI">Philadelphia 76ers</option>
+            <option value = "PHX">Phoenix Suns</option>
+            <option value = "POR">Portland Trail Blazers</option>
+            <option value = "SAC">Sacramento Kings</option>
+            <option value = "SAS">San Antonio Spurs</option>
+            <option value = "TOR">Toronto Raptors</option>
+            <option value = "UTH">Utah Jazz</option>
+            <option value = "WAS">Washington Wizards</option>
+        </select>
+        <br>
+        <br>
+
+        <input type="submit" id="searchButton2" value="View Stats" />
+        </form>
+        </div>
+    </div>
+    <br>
+    <br>
+        <table id="playerDataTable" style="display:none">
+            <tr id="temp">
+                <th>Name</th>
+                <th>Team</th>
+                <th>Age</th>
+                <th>Position</th>
+                <th>Minutes</th>
+                <th>Points</th>
+                <th>Assists</th>
+                <th>Rebounds</th>
+                <th>FG</th>
+                <th>3PT</th>
+                <th>TO</th>
+                <th>STL</th>
+                <th>BLK</th>
+                <th>OREB</th>
+                <th>DREB</th>
+            </tr>
+        </table>
+
+        <table id="playerDataTable2" style="display:none">
+            <tr id="temp">
+                <th>Name</th>
+                <th>Team</th>
+                <th>Age</th>
+                <th>Position</th>
+                <th>Minutes</th>
+                <th>Points</th>
+                <th>Assists</th>
+                <th>Rebounds</th>
+                <th>FG</th>
+                <th>3PT</th>
+                <th>TO</th>
+                <th>STL</th>
+                <th>BLK</th>
+                <th>OREB</th>
+                <th>DREB</th>
+            </tr>
+        </table>
+    </body>
+</html>

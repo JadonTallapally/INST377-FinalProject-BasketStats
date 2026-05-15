@@ -1,0 +1,28 @@
+#body {
+    background-color: white;
+    font-family: Tahoma;
+}
+
+#mainBox {
+    height: auto;
+    width: 65%;
+    border: 2px solid black;
+}
+
+#heading1 {
+    margin-left: 5px;
+    font-family: Tahoma;
+}
+
+#para1 {
+    margin-left: 5px;
+    font-family: Tahoma;
+}
+
+#tableBox {
+    margin-top: 5px;
+    height: auto;
+    width: 65%;
+    border: 2px solid black;
+
+}

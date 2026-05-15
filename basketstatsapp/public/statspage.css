@@ -1,0 +1,59 @@
+#heading {
+    font-family: tahoma;
+    size: large;
+}
+
+#contentBox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#box1 {
+    height: 35%;
+    width: 30%;
+    border: 2px solid black; 
+    text-align: center;
+}
+
+#box2 {
+    height: 35%;
+    width: 30%;
+    border: 2px solid black; 
+    text-align: center;
+}
+
+#gameDataTable{
+   margin: auto;
+} 
+
+#gameDataTable2 {
+    margin:auto
+}
+
+#teams {
+    font-family: tahoma;
+}
+
+#playerDataTable th, td {
+    font-family: tahoma;
+    border: 1px solid black;
+    padding: 10px;  
+    margin: auto;
+}
+
+#playerDataTable {
+    border: 1px solid black;
+    margin:auto
+}
+
+#playerDataTable2 th, td {
+    font-family: tahoma;
+    border: 1px solid black;
+    padding: 10px;  
+    margin: auto;
+}
+
+#playerDataTable2 {
+    border: 1px solid black;
+    margin:auto
+}

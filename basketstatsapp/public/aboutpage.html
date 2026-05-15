@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>About Page</title>
+        <link rel="stylesheet" href="aboutpage.css">
+        <link rel="stylesheet" href="navbar.css">
+        <script src="aboutpage.js" defer></script>
+    </head>
+
+    
+    <body>
+        <nav class="navBar">
+        <img id=nbaLogo src="NBA_logo.png">
+        <h1 id="heading1">BasketStats</h1>
+        <ul>
+            <li><a href="homepage.html" class="Button">Home</a></li>
+            <li><a href="gamespage.html" class="Button">Game Data</a></li>
+            <li><a href="statspage.html" class="Button">Stats</a></li>
+            <li><a href="aboutpage.html" class="Button">About</a></li>
+        </ul>
+        </nav>
+        <br>
+
+        <div id="mainBox">
+        <h1 id="heading1">About Us!</h1>
+        <p id="para1"> 
+        Welcome and thanks for using BasketApp! At BasketApp we want to provide users with an cluster free data exploring experience.
+         We designed our site to be similar to sites like ESPN and Yahoo Sports, but to be free from constant gambling ads and subscriptions.
+        Our site provides usability in 2 primary areas: game scores and player data. You can check out the "Game Data" page for box scores 
+        and quarterly data. Or you can check out the "Stats" page to search for any players stats. You can then use the stats you found 
+        to defend your player on twitter! Jokes aside, we hope you enjoy your time on our site. If you would like, you can sign up below to 
+        become a member of the BasketStats Community! You can also see all the other BasketStat users!</p>
+        </div>
+
+        <div id="tableBox"></div>
+        <h1 id="heading1">Join Us!</h1>
+         <form onsubmit="createUser(); return false;">
+            <label for="userName">Username:</label>
+            <input type="text" id="userName">
+            <br>
+            <label for="favTeam">Favorite Team:</label>
+            <input type="text" id="favTeam">
+            <br>
+            <br>
+            <input type="submit" name="addUser">
+    <body>
+
+
+
+</html>    

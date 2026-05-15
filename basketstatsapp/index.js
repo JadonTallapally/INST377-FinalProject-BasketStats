@@ -3,7 +3,6 @@ const bodyParser = require('body-parser')
 const supabaseClient = require('@supabase/supabase-js')
 const dotenv = require('dotenv')
 
-
 const app = express();
 const port = 3000;
 dotenv.config();
@@ -58,6 +57,23 @@ app.post('/user', async  (req, res) =>{
         res.json({data})
     }
 })
+
+app.get('/games', async (req, res) => {
+    try {
+    const output = await fetch(`https://api.server.nbaapi.com/api/games?isPlayoff=True&page=1&pageSize=50&sortBy=date&ascending=false`)
+    const data = await output.json()
+    res.json(data);
+
+    } catch (error) {
+        console.log(`Error ${error}`);
+        res.statusCode = 500
+        res.send(error)
+    }
+})  
+
+
+
+
 
 app.listen(port, () => {
     console.log(`Express app is listening on ${port}`);
