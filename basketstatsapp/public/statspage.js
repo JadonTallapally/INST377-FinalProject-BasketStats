@@ -146,5 +146,9 @@ async function getPlayerStats() {
             table2.append(tableRow2)
         }
     }
-    table2.style.display = "block"
+    if  (userPlayer2 == "") {
+        table2.style.display = "none"
+    } else {
+        table2.style.display = "block"
+    }
 }

@@ -11,6 +11,14 @@ h2 {
     font-family: Tahoma;
 }
 
+#titleWords {
+    font-family: Tahoma;
+    font-size: large;
+}
+
+#heading3 {
+    font-family: tahoma;
+}
 .gameBox {
     display: inline-table;
     margin-left: 25px;
@@ -23,6 +31,7 @@ h2 {
     padding-left: 10px;
     height: 130px;
     width: 200px;
+    border-radius: 10px;
 } 
 
 .gameBox h3 {
@@ -34,7 +43,14 @@ h2 {
     margin-bottom: 2;
 }
 
-#gameDataTable th, td {
+#gameDataTable td {
+    border: 1px solid black;
+    font-family: tahoma;
+    width: auto;
+    height: auto;
+}
+
+#gameDataTable th {
     font-family: tahoma;
     border: 1px solid black;
     padding: 10px;  
@@ -42,11 +58,14 @@ h2 {
 }
 
 #gameDataTable {
-    border: 1px solid black;
-    margin:auto
+    margin:auto;
+    display:none;
 }
 
-
+#gameDataChart {
+    border: 1px solid black;
+    display: none
+}
 
 
 

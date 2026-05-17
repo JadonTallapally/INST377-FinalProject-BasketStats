@@ -28,12 +28,14 @@
         Our site provides usability in 2 primary areas: game scores and player data. You can check out the "Game Data" page for box scores 
         and quarterly data. Or you can check out the "Stats" page to search for any players stats. You can then use the stats you found 
         to defend your player on twitter! Jokes aside, we hope you enjoy your time on our site. If you would like, you can sign up below to 
-        become a member of the BasketStats Community! You can also see all the other BasketStat users!</p>
+        become a member of the BasketStats Community! You can also see all the other BasketStat users! Enter your username and team and hit join. 
+        Refresh the page you'll see your name listed!</p>
         </div>
 
-        <div id="tableBox"></div>
+
         <h1 id="heading1">Join Us!</h1>
-         <form onsubmit="createUser(); return false;">
+        <div id="tableBox">
+         <form id="userForm" onsubmit="createUser(); return false;">
             <label for="userName">Username:</label>
             <input type="text" id="userName">
             <br>
@@ -41,9 +43,9 @@
             <input type="text" id="favTeam">
             <br>
             <br>
-            <input type="submit" name="addUser">
+            <button type="Join!" name="addUser" class="button-19" role="button">Join!</button>
+        </form>
+        </div> 
+
     <body>
-
-
-
 </html>    

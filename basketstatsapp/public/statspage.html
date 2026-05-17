@@ -21,13 +21,16 @@
         <div id="mainBox">
             <h1 id="heading">Stats Page</h1>
             <h2 id="heading">Welcome to the stats page! On this page you can view individual player stats or compare stats of two different players!</h2>
+            <p id="instructions">To view a single player's stats, enter their information in player 1 and hit view stats. To view 2 different players' stats, enter both the player's stats
+                in each of the boxes, and click 'view stats' on player 2's box.
+            </p>
         </div>   
-        
+        <br>
         <div id="contentBox">
         <div id="box1">
         <h3 id="heading1">Player 1</h3>
         
-        <form id="teams" onsubmit="getPlayerStats(); return false">
+        <form id="teams1" onsubmit="getPlayerStats(); return false">
         <label for="player1">Player Name:</label>
         <input type="text" id="player1" required>
         <br>
@@ -82,7 +85,7 @@
         <br>
         <br>
 
-        <input type="submit" id="searchButton" value="View Stats" />
+        <input type="submit" class="button-15" role="button" value="View Stats" />
         </form>
         </div>
         <br>
@@ -91,7 +94,7 @@
         <!-- <-- person two --> 
 
         <div id="box2">
-        <h3 id="heading2">Player 2</h3>
+        <h3 id="heading1">Player 2</h3>
 
         <form id="teams" onsubmit="getPlayerStats(); return false">
         <label for="player2">Player Name: </label>
@@ -148,50 +151,50 @@
         <br>
         <br>
 
-        <input type="submit" id="searchButton2" value="View Stats" />
+        <input type="submit" class="button-15" role="button" value="View Stats" />
         </form>
         </div>
     </div>
     <br>
     <br>
         <table id="playerDataTable" style="display:none">
-            <tr id="temp">
-                <th>Name</th>
-                <th>Team</th>
-                <th>Age</th>
-                <th>Position</th>
-                <th>Minutes</th>
-                <th>Points</th>
-                <th>Assists</th>
-                <th>Rebounds</th>
-                <th>FG</th>
-                <th>3PT</th>
-                <th>TO</th>
-                <th>STL</th>
-                <th>BLK</th>
-                <th>OREB</th>
-                <th>DREB</th>
-            </tr>
+                <tr id="temp">
+                    <th>Name</th>
+                    <th>Team</th>
+                    <th>Age</th>
+                    <th>Position</th>
+                    <th>Minutes</th>
+                    <th>Points</th>
+                    <th>Assists</th>
+                    <th>Rebounds</th>
+                    <th>FG</th>
+                    <th>3PT</th>
+                    <th>TO</th>
+                    <th>STL</th>
+                    <th>BLK</th>
+                    <th>OREB</th>
+                    <th>DREB</th>
+                </tr>
         </table>
 
         <table id="playerDataTable2" style="display:none">
-            <tr id="temp">
-                <th>Name</th>
-                <th>Team</th>
-                <th>Age</th>
-                <th>Position</th>
-                <th>Minutes</th>
-                <th>Points</th>
-                <th>Assists</th>
-                <th>Rebounds</th>
-                <th>FG</th>
-                <th>3PT</th>
-                <th>TO</th>
-                <th>STL</th>
-                <th>BLK</th>
-                <th>OREB</th>
-                <th>DREB</th>
-            </tr>
+                <tr id="temp">
+                    <th>Name</th>
+                    <th>Team</th>
+                    <th>Age</th>
+                    <th>Position</th>
+                    <th>Minutes</th>
+                    <th>Points</th>
+                    <th>Assists</th>
+                    <th>Rebounds</th>
+                    <th>FG</th>
+                    <th>3PT</th>
+                    <th>TO</th>
+                    <th>STL</th>
+                    <th>BLK</th>
+                    <th>OREB</th>
+                    <th>DREB</th>
+                </tr>
         </table>
     </body>
 </html>

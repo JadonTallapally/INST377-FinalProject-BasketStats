@@ -60,7 +60,7 @@ app.post('/user', async  (req, res) =>{
 
 app.get('/games', async (req, res) => {
     try {
-    const output = await fetch(`https://api.server.nbaapi.com/api/games?isPlayoff=True&page=1&pageSize=50&sortBy=date&ascending=false`)
+    const output = await fetch(`https://api.server.nbaapi.com/api/games?isPlayoff=false&page=1&pageSize=50&sortBy=date&ascending=false`)
     const data = await output.json()
     res.json(data);
 
@@ -70,9 +70,6 @@ app.get('/games', async (req, res) => {
         res.send(error)
     }
 })  
-
-
-
 
 
 app.listen(port, () => {
