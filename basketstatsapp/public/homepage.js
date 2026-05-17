@@ -16,7 +16,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 async function getGameData() {
-    const response = await fetch("https://your-app-name.vercel.app/games");
+    const response = await fetch("https://inst-377-final-project-basket-stats.vercel.app/games");
     const gameData = await response.json();
     console.log(gameData);
     // console.log(gameData);
